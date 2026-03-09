@@ -1,0 +1,115 @@
+/* ===== GLOBAL ===== */
+
+body {
+    font-family: var(--font-sans);
+    background-color: #0f172a;   /* elegante / moderno */
+    color: white;
+    line-height: 1.6;
+}
+
+/* ===== LAYOUT REFINEMENT ===== */
+
+@media (min-width: 768px) {
+
+    header {
+        padding-top: 4rem;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    section {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+}
+
+@media (max-width: 767px) {
+
+    header, section {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+}
+
+/* ===== TYPOGRAPHY ===== */
+
+h1 {
+    font-size: var(--fs-xxxl);
+    line-height: 1.1;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+
+h2 {
+    font-size: var(--fs-xl);
+    font-weight: 400;
+    letter-spacing: -0.5px;
+}
+
+h3 {
+    font-size: var(--fs-lg);
+    letter-spacing: 0.5px;
+}
+
+/* ===== LINKS ===== */
+
+a {
+    color: #38bdf8;   /* azul suave sofisticado */
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+/* ===== LOGO TWEAK (optional but nice) ===== */
+
+nav .brand img {
+    height: 40px;
+    width: auto;
+}
+
+/* ===== HERO IMAGE REFINEMENT ===== */
+
+.col-visual img {
+    border-radius: 12px;
+}
+
+/* ===== BUTTON POLISH ===== */
+
+.btn {
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* ===== LOGO SIZE FIX ===== */
+nav .brand img {
+    height: 20px;
+    width: auto;
+}
+
+.container-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ===== FORCE FULL-WIDTH NAV CONTAINER ===== */
+
+nav.theme-dark .container-menu {
+    max-width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+/* ===== LOGO SIZE ===== */
+
+nav .brand img {
+    height: 30px;
+    width: auto;
+}
